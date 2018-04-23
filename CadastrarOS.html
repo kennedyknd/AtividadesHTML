@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Ordem de Serviço</title>
+    <style>
+        .inputs{
+            float: right;
+        }
+        .espacamento{
+            padding-bottom: 5px !important;
+        }
+        button{
+            float: right;
+            margin: 20px 0px 0px 10px !important;
+        }
+    </style>
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css" />
+</head>
+<body>
+    <div class="container">
+        <fieldset style="width:70%">
+            <legend>Cadastrar Ordem de Serviço</legend>
+            <form class="form-inline" action="/action_page.php">
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="cpf">CPF:</label>
+                    <input size="30px" type="cpf" class="inputs form-control" id="cpf">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="cliente">Cliente:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="cliente">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label>Serviço:</label>
+                    <select style="width:238px" class="inputs form-control"  name="estado">
+                        <option selected="" value="">Selecione</option>
+                        <option value="Formatar Computador">Formatar Computador</option>
+                        <option value="Instalar impressora">Instalar impressora</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="custo">Custo:</label>
+                    <input size="30px" placeholder="R$" type="number" class="inputs form-control" id="custo">
+                </div>
+                <div class="col-sm-12 form-group espacamento">
+                    <label for="obs">Observação:</label>
+                    <textarea class="inputs form-control" rows="7" cols="99" id="obs"></textarea>
+                </div>
+                <div class="col-sm-12 form-group espacamento">
+                    <label for="formPagamento">Forma de Pagamento:</label>
+                    <input type="text" size="70" class="inputs form-control" id="formPagamento">
+                </div>
+                <div class="col-sm-12 form-group espacamento">
+                    <label for="metPagamento">Método de Pagamento:</label>
+                    <input type="text" size="70" class="inputs form-control" id="metPagamento">
+                </div>
+                <br/>
+                <div class="col-sm-12">
+                    <button class="btn btn-success" type="reset" onClick="alert('Salvo com sucesso'); return true"><b>Cadastrar OS</b></button>
+                    <button class="btn btn-danger" type="reset" onClick="alert('Limpo com sucesso'); return true"><b>Limpar</b></button>
+                    <button class="btn btn-warning">Voltar</button></a>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

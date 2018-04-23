@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css" />
+    <style>
+        .inputs{
+            float: right;
+        }
+        .espacamento{
+            padding-bottom: 5px !important;
+        }
+        button{
+            float: right;
+            margin: 20px 0px 0px 10px !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset style="width:70%">
+            <legend>Cadastrar Cliente</legend>
+            <form class="form-inline" action="/action_page.php">
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="nome">Nome:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="nome">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="datanasci">Nascimento:</label>
+                    <input size="30px" type="date" class="inputs form-control" id="datanasci">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="email">Email:</label>
+                    <input size="30px" type="email" class="inputs form-control" id="email">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="cpf">CPF:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="cpf">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="telefone">Telefone:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="telefone">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="rg">RG:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="rg">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label>Sexo:</label>
+                    <div class="inputs"><input type="radio" name="gender" value="female" id="feminino"> <label for="feminino"> Feminino </label></div>
+                    <div class="inputs"><input type="radio" name="gender" value="male" id="masculino"checked> <label for="masculino"> Masculino </label></div>
+                </div>
+                <div class="col-sm-12 form-group espacamento">
+                    <label>Endereço:</label>
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="logradouro">Logradouro:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="logradouro">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="complemento">Complemento:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="complemento">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="bairro">Bairro:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="bairro">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="cidade">Cidade:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="cidade">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="cep">CEP:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="cep">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label for="numero">Número:</label>
+                    <input size="30px" type="text" class="inputs form-control" id="numero">
+                </div>
+                <div class="col-sm-6 form-group espacamento">
+                    <label>UF:</label>
+                    <select style="width:240px" class="inputs form-control"  name="estado">
+                        <option selected="" value="">Selecione</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SR</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-success" type="reset" onClick="alert('Salvo com sucesso'); return true"><b>Cadastrar Cliente</b></button>
+                    <button class="btn btn-danger" type="reset" onClick="alert('Limpo com sucesso'); return true"><b>Limpar</b></button>
+                    <button class="btn btn-warning">Voltar</button></a>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

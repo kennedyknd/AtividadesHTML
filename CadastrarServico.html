@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Servico</title>
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css" />
+    <style>
+        .inputs{
+            float: right;
+        }
+        .espacamento{
+            padding-bottom: 5px !important;
+        }
+        button{
+            float: right;
+            margin: 20px 0px 0px 10px !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset style="width:70%">
+            <legend>Cadastrar Cliente</legend>
+            <form class="form-inline" action="/action_page.php">
+                <div class="col-sm-12 form-group espacamento">
+                    <label for="servico">Serviço:</label>
+                    <input type="text" size="97" class="inputs form-control" id="servico">
+                </div>
+                <div class="col-sm-12 form-group espacamento">
+                    <label for="obs">Observação:</label>
+                    <textarea class="inputs form-control" rows="7" cols="100" id="obs"></textarea>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-success" type="reset" onClick="alert('Salvo com sucesso'); return true"><b>Cadastrar Serviço</b></button>
+                    <button class="btn btn-danger" type="reset" onClick="alert('Limpo com sucesso'); return true"><b>Limpar</b></button>
+                    <button class="btn btn-warning">Voltar</button></a>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

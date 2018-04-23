@@ -1,0 +1,148 @@
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>DIV</title>
+        <style>
+            h1{
+                text-align: center;
+                color: #61d87a;
+            }
+            li{
+                font-weight: bold;
+                padding: 0 0 0 10px;
+            }
+            .tudo {
+                width: 85%;
+                margin: 0 auto;
+                min-height: 100%;
+                height: auto !important;
+                height: 100%;
+            }
+            .cabecalho {
+                height: 100px;
+                background: #76b67d;
+            }
+            .meio {
+                width: 100%;
+                padding: 0 0 100px;
+                position: relative;
+            }
+            .meio:after {
+                display: table;
+                clear: both;
+                content: '';
+            }
+            .conteudo {
+                width: 100%;
+                float: left;
+                overflow: hidden;
+
+            }
+            .conteudo2 {
+                padding: 0 100px 0 220px;
+            }
+
+            .menu-lateral {
+                float: left;
+                height: 600px;
+                width: 200px;
+                margin-left: -100%;
+                position: relative;
+                background: #76b67d;
+            }
+            .barra{
+                border: 1px solid;
+                padding: 10px;
+                background: #ff91f2;
+                text-decoration: underline;
+                line-height: 30px;
+                color: #a80004;
+            }
+            ul {
+                margin: 0;
+                padding: 10px;
+                list-style: none;
+                width: 150px;
+            }
+            .menu ul {
+                padding: 10px;
+                width: 180px;
+                margin:0px;
+                background-color: #c8ffb3;
+                list-style:none;
+            }
+            .menu li{
+                list-style: none;
+                background: #e7ffa2;
+                border-bottom: 1px solid #666;
+            }
+            .img{
+                float: left;
+            }
+            .kennedy {
+                height: 10em;
+                position: relative }
+            .kennedy p {
+                margin: 0;
+                position: absolute;
+                top: 30%;
+                left: 20%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tudo">
+            <header class="cabecalho">
+                <div class="img">
+                    <img src="iesb.jpg" width="90" height="90"/>
+                </div>
+                <div class="kennedy">
+                    <p><b>IESB.BR</b></p>
+                </div>
+            </header>
+            <div class="meio">
+                <div class="conteudo">
+                    <main class="conteudo2">
+                        <h1>Estudando CSS</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur, corporis dignissimos dolore eaque eligendi illum incidunt ipsam itaque, iusto mollitia natus numquam odio officia, rerum suscipit voluptas. Natus, vero!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum minus, nisi nobis quia recusandae sed veniam. Adipisci, corporis dicta excepturi laborum laudantium modi molestias nemo, perspiciatis, rerum unde vel.</p>
+                        <p class="barra">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum minus, nisi nobis quia recusandae sed veniam. Adipisci, corporis dicta excepturi laborum laudantium modi molestias nemo, perspiciatis, rerum unde vel.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum minus, nisi nobis quia recusandae sed veniam. Adipisci, corporis dicta excepturi laborum laudantium modi molestias nemo, perspiciatis, rerum unde vel.</p>
+                    </main>
+                </div>
+                <aside class="menu-lateral">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="">Página 1</a>
+                            </li>
+                            <li>
+                                <a href="">Página 2</a>
+                            </li>
+                            <li>
+                                <a href="">Página 3</a>
+                            </li>
+                            <li>
+                                <a href="">Página 4</a>
+                            </li>
+                            <li>
+                                <a href="">Página 5</a>
+                            </li>
+                            <li>
+                                <a href="">Página 6</a>
+                            </li><li>
+                                <a href="">Página 7</a>
+                            </li><li>
+                                <a href="">Página 8</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+
+    </body>
+</html>
